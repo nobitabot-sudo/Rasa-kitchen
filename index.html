@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RASA - Indian Kitchen | Sahakara Nagar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #d4af37; /* Premium Gold */
+            --bg-dark: #121212;
+            --text-light: #f5f5f5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+        }
+
+        /* Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: rgba(18, 18, 18, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: 2px;
+        }
+
+        .order-btn {
+            background-color: #25D366; /* WhatsApp Green */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .order-btn:hover {
+            background-color: #1ebc5a;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-bg.jpg') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            color: #ddd;
+        }
+
+        /* Menu Section */
+        .menu-section {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+        }
+
+        .menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .menu-card {
+            background-color: #1e1e1e;
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-details {
+            padding: 20px;
+        }
+
+        .menu-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+
+        .menu-price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Info Section */
+        .info-section {
+            background-color: #1a1a1a;
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .info-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .info-box {
+            max-width: 300px;
+        }
+
+        .info-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a0a0a;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .menu-card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">RASA</div>
+        <a href="https://wa.me/917899507775?text=Hello%20RASA%20team,%20I%20would%20like%20to%20place%20an%20order." class="order-btn" target="_blank">Order on WhatsApp</a>
+    </header>
+
+    <section class="hero">
+        <h1>RASA</h1>
+        <p>Asian Fusion, Chinese, North Indian</p>
+        <a href="https://wa.me/917899507775?text=Hello,%20I%20want%20to%20book%20a%20table." class="order-btn" style="background-color: var(--primary-color); padding: 15px 30px; font-size: 1.1rem;">Book A Table</a>
+    </section>
+
+    <section class="menu-section">
+        <h2 class="section-title">Menu Highlights</h2>
+        <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-card">
+                <img src="item1.jpg" alt="Tomato Dhaniya Shorba" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Tomato Dhaniya Shorba</div>
+                    <p style="font-size: 0.9rem; color: #aaa;">Classic tomato soup flavored with fresh coriander.</p>
+                </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="menu-card">
+                <img src="item2.jpg" alt="Paneer Tikka" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Tandoori Paneer Tikka</div>
+                    <p style="font-size: 0.9rem; color: #aaa;">Cottage cheese marinated in traditional spices and roasted.</p>
+                </div>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="menu-card">
+                <img src="item1.jpg" alt="Gobi Manchurian" class="menu-img">
+                <div class="menu-details">
+                    <div class="menu-title">Gobi Manchurian</div>
+                    <p style="font-size: 0.9rem; color: #aaa;">Indo-Chinese favorite crispy cauliflower tossed in tangy sauce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <h2 class="section-title">Visit Us</h2>
+        <div class="info-grid">
+            <div class="info-box">
+                <h3>Location</h3>
+                <p>1st floor, Century Corbel, Sahakarnagar Main Rd, Park View Layout, Bengaluru, Karnataka 560092</p>
+            </div>
+            <div class="info-box">
+                <h3>Hours</h3>
+                <p>Open Today: 7:00 PM onwards</p>
+            </div>
+            <div class="info-box">
+                <h3>Contact</h3>
+                <p>+91 78995 07775</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 RASA Indian Kitchen. Built by GrowDesk.</p>
+    </footer>
+
+</body>
+</html>
